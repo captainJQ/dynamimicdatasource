@@ -1,0 +1,11 @@
+dynamic-datasource:
+  beijing:
+    password: root
+    url: jdbc:mysql://localhost:3306/testdemo
+    username: root
+    driver-class-name: com.mysql.jdbc.Driver
+  shenzhen:
+    password: root
+    url: jdbc:mysql://localhost:3306/testdemo2
+    username: root
+    driver-class-name: com.mysql.jdbc.Driver
