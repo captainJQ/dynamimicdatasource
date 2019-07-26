@@ -10,10 +10,17 @@ dynamic-datasource:
     username: root
     driver-class-name: com.mysql.jdbc.Driver
 logging:
-  file: ./logs/lenosp-log.log
-spring:
-  datasource:
-    druid:
-      filter:
-        slf4j:
-          enabled: true
+#  config: classpath:log.yml
+  level:
+    com:
+      jql:
+        springboot:
+          dynamicdatasource:
+            mapper: dubug
+
+mybatis:
+  # spring boot集成mybatis的方式打印sql
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
